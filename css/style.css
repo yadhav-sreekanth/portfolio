@@ -1,0 +1,371 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-size: 17px;
+}
+body {
+  background: linear-gradient(250deg, rgb(0, 0, 0) 0%, rgb(26, 26, 26) 100%);
+  color: #f5f5f5;
+  font-family: 'Segoe UI', sans-serif;
+}
+.hero {
+  background: linear-gradient(135deg, #0ff 0%, #00f 100%);
+  text-align: center;
+  padding: 60px 20px;
+  animation: fadeIn 2s ease;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .profile {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-right : 20px;
+  border: 5px solid #fff;
+  box-shadow: 0 0 20px #fff;
+  animation: float 3s infinite ease-in-out;
+}
+.title {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  font-weight: 700;
+}
+.subtitle {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+.hero h1{
+  transition: 1s ease;
+}
+body:hover {
+  background-position: right center;
+}
+.section {
+  margin-bottom: 60px;
+  animation: slideUp 1.2s ease-in-out;
+}
+.section h2 ,.sectioncontact h2{
+  font-size: 2rem;
+  color: #00f2ff;
+  margin-bottom: 20px;
+  position: relative;
+}
+.section h2 ::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 60px;
+  background: #00f2ff;
+  margin-top: 5px;
+  border-radius: 3px;
+}
+.sectioncontact h2 ::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 60px;
+  background: #00f2ff;
+  margin-top: 5px;
+  border-radius: 3px;
+}
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+.skill-tags span {
+  background: linear-gradient(to right, #e40000, #3333ff);
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+.project-card {
+  background: #111;
+  border-left: 5px solid #ff00cc;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: 0.4s;
+}
+p.image a{ 
+  margin-left: 4px;
+}
+.contact a {
+  color: #0ff;
+  text-decoration: none;
+}
+.stars {
+  width: 2px;
+  height: 2px;
+  background: white;
+  position: absolute;
+  animation: moveStars 10s linear infinite;
+}
+.para{
+  opacity: 0;
+  animation: slideInLeft 1s ease forwards;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+  transition: box-shadow 0.4s ease;
+  margin-bottom: 30px;
+  border-left: 5px solid #ff00cc;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+.thoughts{
+  margin-top: 60px;
+  font-size: 28px;
+}
+h2#thoughts{
+  margin-bottom: -45px;   
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 60px;
+  border-top: 1px solid #222;
+}
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0,255,255,0.1);
+}
+.glass-cards {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0,255,255,0.1);
+}
+.glass{
+background: rgba(255, 255, 255, 0.05);
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 35px;
+padding: 20px;
+animation: slideInLeft 1s ease forwards;
+height: 360px;
+box-shadow: 0 0 15px rgba(0,255,255,0.1);
+}
+.glasser{
+background: rgba(255, 255, 255, 0.05);
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 15px;
+padding: 20px;
+height: 112px;
+box-shadow: 0 0 15px rgba(0,255,255,0.1);
+}
+.glassest{
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  animation: slideUp 2s ease ;
+  margin-bottom: 45px;
+  height: 70px;
+  box-shadow: 0 0 15px rgba(0,255,255,0.1);
+}
+.sectioncontact p img{
+  width: 26px;
+  margin-bottom: -7px;
+  margin-top: 4px;
+  border-radius: 15px;
+}
+  p.problem{
+  font-size: 33px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #00f2ff;
+  font-weight: 700;
+  margin-top: 60px;
+  margin-bottom: 12px;
+  animation: slideUp 2s ease;
+  }
+  ul.list{
+  list-style: none;
+  animation: slideUp 2s ease;
+  }
+  p.href a, a{
+  text-decoration: solid;
+  }
+  a {
+    color: rgb(2, 255, 107); 
+  }
+  p.href a {
+  border: none;
+  }
+  .contact-section h2 {
+  font-size: 33px;
+  margin-bottom: 10px;
+  animation: slideUp 1.2s ease-in-out;
+  color: #00f2ff;
+}
+.contact-section p {
+  font-size: 1.1rem;
+  color: #cccccc;
+  animation: slideUp 1.2s ease-in-out;
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  font-size: 1.2rem;
+}
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  animation: slideUp 1.2s ease-in-out;
+  margin-right: 45px;
+}
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  border: 2px solid;
+}
+.contact-link i {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+.contact-link.instagram {
+  border-color: #e1306c;
+  animation: float 5s infinite ease-in-out;
+}
+.contact-link.github {
+  border-color: #6e6e6e;
+  animation: float 5s infinite ease-in-out;
+}
+.contact-link.email {
+  border-color: #665454;
+  animation: float 5s infinite ease-in-out;
+}
+.contact-link.linkedin {
+  border-color: #004fa3;
+  animation: float 5s infinite ease-in-out;
+}
+.gradient-block {
+  border-left: 6px solid;
+  border-image: linear-gradient(to bottom, #ff6ec4, #7873f5) 1;
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in-section.visible {
+  opacity: 1;
+  transform: none;
+}
+
+   .glassest:hover{
+    box-shadow: 0 0 20px rgba(80, 241, 0, 0.3);
+    border-color: #00ff66;  
+    box-shadow: 0 0 15px #00eeff;
+    transform: translateY(-1px);
+  } 
+  .para:hover{
+    box-shadow: 0 0 20px rgba(80, 241, 0, 0.3);
+    border-color: #00ff66;  
+    box-shadow: 0 0 15px #00eeff;
+    transform: translateY(-5px);
+  }
+  .glass-cards:hover{
+    box-shadow: 0 0 20px rgba(80, 241, 0, 0.3);
+    border-color: #00ff66;  
+    box-shadow: 0 0 15px #00eeff;
+    transform: translateY(-1px);
+  }
+  .glasser:hover{
+    box-shadow: 0 0 20px rgba(80, 241, 0, 0.3);
+    border-color: #00ff66;  
+    box-shadow: 0 0 15px #00eeff;
+    transform: translateY(-1px);
+  }
+  .project-card:hover {
+    border-color: #00f2ff;
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #00f2ff;
+  }
+  .skill-tags span:hover {
+    box-shadow: 0 0 15px #00f2ff;
+    transform: scale(1.2);
+  }
+  .contact-link.linkedin:hover {
+    background: rgba(0, 123, 255, 0.1);
+  }
+  .contact-link.github:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .contact-link.email:hover {
+    background: rgba(0, 123, 255, 0.1);
+  }
+  .contact-link.instagram:hover {
+    background: rgba(225, 48, 108, 0.1);
+  }
+  .contact-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(255,255,255,0.1);
+  }
+  .contact-link:hover i {
+    transform: scale(1.2);
+  }
+  a:hover {
+    color: rgb(255, 251, 0); 
+     }
+     a:active {
+       color:  rgb(55, 0, 255);    
+     }
+@keyframes moveStars {
+  from {
+    transform: translateY(-100vh);
+    opacity: 1;}
+  to {
+    transform: translateY(100vh);
+    opacity: 0;}}
+@keyframes fadein {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }}
+@keyframes slideInLeft {
+  to {
+    transform: translateX(0);
+    opacity: 1;}}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }}
